@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/li_2dp_size"
+        android:paddingLeft="@dimen/li_16dp_size"
+        android:paddingRight="@dimen/li_2dp_size"
+        android:paddingTop="@dimen/li_2dp_size"
+        android:textColor="@color/li_title_gray"
+        android:textSize="@dimen/li_16sp_size"
+        tools:text="公司股东" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/li_64dp_size"
+        >
+        <com.gyiscas.smartbidding.ui.widget.displayComponents.ItemView
+            android:id="@+id/item_ItemView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/li_32dp_size"
+            >
+        </com.gyiscas.smartbidding.ui.widget.displayComponents.ItemView>
+    </RelativeLayout>
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/li_1dp_size"
+        android:layout_margin="@dimen/li_16dp_size"
+        android:layout_marginRight="@dimen/li_16dp_size"
+        android:background="@color/li_divider_line_outline"/>
+</LinearLayout>

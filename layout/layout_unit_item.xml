@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unit_layout"
+    style="@style/common_lv_corners_item_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/userSuggest_ll"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/unit_image"
+        android:layout_width="@dimen/li_24dp_size"
+        android:layout_height="@dimen/li_24dp_size"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/li_4dp_size"
+        android:src="@drawable/fagaiwei" />
+
+    <TextView
+        android:id="@+id/unit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/li_12dp_size"
+        android:layout_weight="1"
+        android:text="单位名称"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/li_16sp_size" />
+
+    <ImageView
+        android:layout_width="@dimen/li_10dp_size"
+        android:layout_height="@dimen/li_10dp_size"
+        android:alpha="0.6"
+        android:focusable="false"
+        android:src="@mipmap/arrow" />
+
+</LinearLayout>

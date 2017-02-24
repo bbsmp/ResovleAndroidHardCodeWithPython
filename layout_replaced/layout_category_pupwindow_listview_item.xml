@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_category_name"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/li_6dp_size"
+        android:paddingTop="@dimen/li_6dp_size"
+        android:textSize="14sp"
+        android:text="@string/suo_you_fen_lei"
+        android:paddingLeft="@dimen/li_6dp_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorGreyBtn"
+       />
+    <ImageView
+        android:id="@+id/id_done_img"
+        android:layout_width="@dimen/li_20dp_size"
+        android:layout_height="@dimen/li_20dp_size"
+        android:src="@drawable/ic_done_black_24dp"
+        android:layout_alignParentRight="true"
+        android:tint="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/li_6dp_size"
+        />
+</RelativeLayout>

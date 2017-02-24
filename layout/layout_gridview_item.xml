@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="keywordModel"
+            type="com.gyiscas.smartbidding.model.KeywordModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/common_gridview_item_style"
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/li_3dp_size"
+            android:paddingLeft="@dimen/li_6dp_size"
+            android:paddingRight="@dimen/li_6dp_size"
+            android:paddingTop="@dimen/li_3dp_size"
+            android:editable="false"
+            android:textSize="@dimen/li_16sp_size"
+            app:binding="@{keywordModel.keyword}"
+            />
+        <ImageButton
+            android:id="@+id/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/common_gridview_item_style"
+            android:paddingTop="@dimen/li_3dp_size"
+            android:paddingBottom="@dimen/li_3dp_size"
+            android:paddingRight="@dimen/li_6dp_size"
+            android:paddingLeft="@dimen/li_6dp_size"
+            android:src="@mipmap/add"
+            android:alpha="0.6"
+            />
+
+    </LinearLayout>
+
+</layout>

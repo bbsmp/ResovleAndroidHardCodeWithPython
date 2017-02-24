@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <com.gyiscas.smartbidding.ui.widget.dataload.LayoutNoDataLoaded
+        android:id="@+id/layoutNoDataLoaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+    </com.gyiscas.smartbidding.ui.widget.dataload.LayoutNoDataLoaded>
+    <com.gyiscas.smartbidding.ui.widget.dataload.LayoutProgressBar
+        android:id="@+id/layoutProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+    </com.gyiscas.smartbidding.ui.widget.dataload.LayoutProgressBar>
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/li_8dp_size"
+        android:layout_marginTop="@dimen/li_8dp_size"
+        android:background="@color/colorGreyBtn"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/id_readState_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_gray_view"
+            android:paddingBottom="@dimen/li_8dp_size"
+            android:paddingLeft="@dimen/li_16dp_size"
+            android:paddingTop="@dimen/li_8dp_size"
+            android:text="@string/biao_ji_wei_yi_du"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/li_15sp_size" />
+        <TextView
+            android:id="@+id/id_collState_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/li_1px_size"
+            android:layout_marginTop="@dimen/li_1px_size"
+            android:background="@drawable/selector_white_gray_view"
+            android:paddingBottom="@dimen/li_8dp_size"
+            android:paddingLeft="@dimen/li_16dp_size"
+            android:paddingTop="@dimen/li_8dp_size"
+            android:text="@string/shou_cang"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/li_15sp_size" />
+        <TextView
+            android:id="@+id/id_share_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_gray_view"
+            android:paddingBottom="@dimen/li_8dp_size"
+            android:paddingLeft="@dimen/li_16dp_size"
+            android:paddingTop="@dimen/li_8dp_size"
+            android:text="@string/share"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/li_15sp_size" />
+    </LinearLayout>
+</LinearLayout>

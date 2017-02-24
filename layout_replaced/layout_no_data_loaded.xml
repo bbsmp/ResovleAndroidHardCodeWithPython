@@ -1,0 +1,26 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_nodataLoaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        >
+        <ImageView
+            android:id="@+id/nodataIv"
+            android:layout_width="@dimen/li_75dp_size"
+            android:layout_height="@dimen/li_75dp_size"
+            android:src="@mipmap/sad"
+            android:alpha="0.3"/>
+        <TextView
+            android:id="@+id/id_datainfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:text="@string/zan_wu_shu_ju_dian_ji_jia"
+            android:textSize="@dimen/li_15sp_size"
+            />
+</LinearLayout>

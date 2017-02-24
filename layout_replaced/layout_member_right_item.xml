@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/li_120dp_size"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:padding="2dp"
+    android:background="@drawable/selector_white_gray_view"
+    >
+    <ImageView
+        android:id="@+id/imageIv"
+        android:layout_width="@dimen/li_39dp_size"
+        android:layout_height="@dimen/li_39dp_size"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_look_bid" />
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageIv"
+        android:layout_centerHorizontal="true"
+        android:maxEms="5"
+        android:textSize="@dimen/li_15sp_size"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/li_11dp_size"
+        tools:ignore="RtlHardcoded"
+        tools:text="@string/guan_zhu_zi_zhi_bu_shou_x" />
+</RelativeLayout>

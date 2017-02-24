@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+    <LinearLayout
+        android:id="@+id/unit_layout"
+        style="@style/common_lv_corners_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userSuggest_ll"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/unit_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/li_12dp_size"
+                android:text="@string/dan_wei_ming_cheng"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/li_20sp_size" />
+            <TextView
+                android:id="@+id/unit_addr_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/li_12dp_size"
+                android:text="@string/dan_wei_de_zhi"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/li_16sp_size" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/arrow_imag"
+            android:layout_width="@dimen/li_16dp_size"
+            android:layout_height="@dimen/li_16dp_size"
+            android:alpha="0.6"
+            android:focusable="false"
+            android:src="@mipmap/arrow" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<LinearLayout
+    android:id="@+id/activity_my_member"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gyiscas.smartbidding.ui.vip.MyMemberActivity">
+    <com.gyiscas.smartbidding.ui.widget.ToolBarView
+        android:id="@+id/toolbarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.gyiscas.smartbidding.ui.widget.ToolBarView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/li_16dp_size"
+            android:paddingRight="@dimen/li_16dp_size">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/li_18dp_size"
+                android:paddingTop="@dimen/li_18dp_size"
+                android:text="@string/VIP_tao_can"
+                android:textColor="@color/li_content_black"
+                android:textSize="@dimen/li_18sp_size" />
+           <com.gyiscas.smartbidding.ui.vip.widget.MemberPackageListView
+               android:id="@+id/memberPackageListView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+           </com.gyiscas.smartbidding.ui.vip.widget.MemberPackageListView>
+            <LinearLayout
+                android:id="@+id/shouldPayLv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/selectedPackageTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/li_18dp_size"
+                    android:paddingTop="@dimen/li_6dp_size"
+                    android:text="@string/ying_fu_jin_e_¥"
+                    android:textColor="@color/li_title_gray"
+                    android:textSize="@dimen/li_15sp_size" />
+                <TextView
+                    android:id="@+id/shouldPayTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/li_18dp_size"
+                    android:paddingTop="@dimen/li_18dp_size"
+                    tools:text="@string/666"
+                    android:textColor="@color/li_tag_checked"
+                    android:textSize="@dimen/li_24p_size" />
+            </LinearLayout>
+        <Button
+            android:id="@+id/payBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/common_button_style"
+            android:textSize="@dimen/li_20p_size"
+            android:text="@string/qu_zhi_fu"
+            android:layout_marginTop="@dimen/li_24dp_size"
+            />
+            <TextView
+                android:id="@+id/tipTextView"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/wen_xin_ti_shi"
+                android:textColor="@color/li_title_gray"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</layout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical">
+    <com.gyiscas.smartbidding.ui.widget.ToolBarView
+        android:id="@+id/toolbarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        style="@style/common_lv_corners_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_analysis_of_cc_ll"
+        android:layout_marginLeft="@dimen/li_6dp_size"
+        android:layout_marginRight="@dimen/li_6dp_size"
+        android:layout_marginTop="@dimen/li_14dp_size"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/jie_shou_tui_song_xiao_xi"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/li_16sp_size" />
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/push_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            fab:kswOnColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/push_voice"
+        style="@style/common_lv_corners_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_analysis_of_cc_ll"
+        android:layout_marginLeft="@dimen/li_6dp_size"
+        android:layout_marginRight="@dimen/li_6dp_size"
+        android:layout_marginTop="@dimen/li_14dp_size"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sheng_yin"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/li_16sp_size" />
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/push_switch_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            fab:kswOnColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/push_vibrate"
+        style="@style/common_lv_corners_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/push_voice"
+        android:layout_marginLeft="@dimen/li_6dp_size"
+        android:layout_marginRight="@dimen/li_6dp_size"
+        android:layout_marginTop="@dimen/li_14dp_size"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zhen_dong"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/li_16sp_size" />
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/push_switch_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            fab:kswOnColor="@color/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

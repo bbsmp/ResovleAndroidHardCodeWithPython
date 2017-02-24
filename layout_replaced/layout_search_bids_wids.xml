@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="model"
+            type="com.gyiscas.smartbidding.ui.search.searchView.model.BidsWinsModel" />
+        <variable
+            name="present"
+            type="com.gyiscas.smartbidding.ui.search.searchView.presenters.DatePresenter" />
+        <variable
+            name="areaPresent"
+            type="com.gyiscas.smartbidding.ui.search.searchView.presenters.AreaPresenter" />
+        <variable
+            name="datePresent"
+            type="com.gyiscas.smartbidding.ui.search.searchView.presenters.DatePresenter" />
+        <variable
+            name="zigesenchaPresent"
+            type="com.gyiscas.smartbidding.ui.search.searchView.presenters.ZiGeShenChaPresenter"/>
+        <variable
+            name="activity"
+            type="com.gyiscas.smartbidding.ui.search.PublicSearchActivity" />
+        <import type="com.gyiscas.smartbidding.ui.search.choose.view.ChooseView" />
+        <import type="android.view.View"/>
+        <variable
+            name="choosePresenter"
+            type="com.gyiscas.smartbidding.ui.search.searchView.presenters.ChoosePresenter" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/li_white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/li_16dp_size"
+            android:gravity="center_horizontal"
+            android:text="@string/zhao_biao_zhong_biao_gao_"
+            android:textSize="@dimen/li_16sp_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/li_16dp_size"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_search_pup_item"
+                android:gravity="center"
+                android:onClick="@{() -> model.clear()}"
+                android:text="@string/zhong_zhi"
+                android:textSize="@dimen/li_18sp_size" />
+            <Button
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_search_pup_button_red"
+                android:gravity="center"
+                android:text="@string/jian_suo"
+                android:textColor="@color/li_white"
+                android:textSize="@dimen/li_18sp_size" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/buttons"
+            android:layout_below="@id/title"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/li_16dp_size"
+                android:paddingRight="@dimen/li_16dp_size">
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/id_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/li_white"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    app:tabIndicatorHeight="@dimen/li_2.5dp_size"
+                    app:tabMode="fixed"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    app:tabSelectedTextColor="@color/colorPrimary"
+                    app:tabTextAppearance="@style/tabTextAppearance"
+                    app:tabTextColor="@color/half_black">
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zhao_biao_xin_xi" />
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zhong_biao_xin_xi" />
+                </android.support.design.widget.TabLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/di_qu"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/li_32dp_size"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:hint="@string/di_qu"
+                            android:onClick="@{(view) -> areaPresent.pickArea(view, model)}"
+                            android:textColor="@color/colorGreyBtn"
+                            android:textSize="@dimen/li_15sp_size"
+                            app:binding="@{model.c_name}"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/spdwLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:visibility="@{model.isWid() ? View.GONE : View.VISIBLE}"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shen_pi_dan_wei"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:padding="@dimen/li_8dp_size"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.ao_name}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ye_zhu_fang"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:padding="@dimen/li_8dp_size"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.org_name}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shi_jian_duan"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/li_32dp_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:hint="@string/qi_shi_shi_jian"
+                            android:onClick="@{(view) -> datePresent.pickDate(view)}"
+                            android:textColor="@color/colorGreyBtn"
+                            android:textSize="@dimen/li_15sp_size"
+                            app:binding="@{model.beginDate}" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/li_8dp_size"
+                            android:layout_marginRight="@dimen/li_8dp_size"
+                            android:text="@string/G_L_t_x_A_e" />
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/li_32dp_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:hint="@string/jie_shu_shi_jian"
+                            android:onClick="@{(view) -> datePresent.pickDate(view)}"
+                            android:textColor="@color/colorGreyBtn"
+                            android:textSize="@dimen/li_15sp_size"
+                            app:binding="@{model.endDate}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zhao_biao_lei_bie"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:hint="@string/zhao_biao_lei_bie"
+                            android:minHeight="@dimen/li_32dp_size"
+                            android:onClick="@{() -> choosePresenter.startChooseActivity(activity, ChooseView.GET_PROJECT_BID_TYPE)}"
+                            android:textColor="@color/li_content_black"
+                            android:textColorHint="@color/colorGreyBtn"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.bc_name}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zhao_biao_fang_shi"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:hint="@string/zhao_biao_fang_shi"
+                            android:minHeight="@dimen/li_32dp_size"
+                            android:onClick="@{() -> choosePresenter.startChooseActivity(activity, ChooseView.GET_PROJECT_BID_WAY)}"
+                            android:textColor="@color/li_content_black"
+                            android:textColorHint="@color/colorGreyBtn"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.bt_name}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xiang_mu_fu_ze_ren_ye_zhu"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:padding="@dimen/li_8dp_size"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.bo_orgname}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dai_li_ji_gou"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:padding="@dimen/li_8dp_size"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.agent}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dai_li_ji_gou_fu_ze_ren"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:padding="@dimen/li_8dp_size"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.bo_Zdirector}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/xmysLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:visibility="@{!model.isWid() ? View.VISIBLE : View.GONE}"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cai_gou_jin_e_xiang_mu_yu"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/li_2dp_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:inputType="number"
+                            android:padding="@dimen/li_8dp_size"
+                            android:singleLine="true"
+                            android:text='@{model.bid_budgetMin.get()}'
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.bid_budgetMin}" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/li_8dp_size"
+                            android:layout_marginRight="@dimen/li_8dp_size"
+                            android:text="@string/G_L_t_x_A_e" />
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/li_2dp_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:inputType="number"
+                            android:padding="@dimen/li_8dp_size"
+                            android:singleLine="true"
+                            android:text='@{model.bid_budgetMax.get()}'
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.bid_budgetMax}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/zbqujLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="@{model.isWid() ? View.VISIBLE : View.GONE}"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zhong_biao_jin_e_qu_jian_"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/li_2dp_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:inputType="number"
+                            android:padding="@dimen/li_8dp_size"
+                            android:singleLine="true"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.wMoneyMin}" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/li_8dp_size"
+                            android:layout_marginRight="@dimen/li_8dp_size"
+                            android:text="@string/G_L_t_x_A_e" />
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/li_2dp_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:inputType="number"
+                            android:padding="@dimen/li_8dp_size"
+                            android:singleLine="true"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.wMoneyMax}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/zbhxrLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:visibility="@{model.isWid() ? View.VISIBLE : View.GONE}"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zhong_biao_hou_xuan_ren"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:padding="@dimen/li_8dp_size"
+                            android:textSize="@dimen/li_16sp_size"
+                            app:binding="@{model.wComName}" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/zgscfsLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:gravity="center_vertical"
+                    android:visibility="@{!model.isWid() ? View.VISIBLE : View.GONE}"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zi_ge_shen_cha_fang_shi"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/li_32dp_size"
+                            android:background="@drawable/selector_search_pup_item"
+                            android:hint="@string/zi_ge_shen_cha_fang_shi"
+                            android:onClick="@{(view) -> zigesenchaPresent.pickCheckWay(view, model)}"
+                            android:textColor="@color/colorGreyBtn"
+                            android:textSize="@dimen/li_15sp_size"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

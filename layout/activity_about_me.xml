@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="activity"
+            type="com.gyiscas.smartbidding.ui.AboutMeActivity" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+           <com.gyiscas.smartbidding.ui.widget.ToolBarView
+               android:id="@+id/toolbarView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+           </com.gyiscas.smartbidding.ui.widget.ToolBarView>
+        </android.support.design.widget.AppBarLayout>
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/header_image_layout"
+            style="@style/common_lv_corners_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/li_6dp_size"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/li_16sp_size" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/li_40dp_size"
+                android:layout_height="@dimen/li_40dp_size"
+                android:src="@drawable/ic_launcher"
+                app:civ_border_width="@dimen/li_1px_size"
+                app:civ_border_color="@color/grey"/>
+            <ImageView
+                android:layout_width="@dimen/li_10dp_size"
+                android:layout_height="@dimen/li_10dp_size"
+                android:layout_marginLeft="@dimen/li_8dp_size"
+                android:alpha="0.6"
+                android:src="@mipmap/arrow" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/usname_layout"
+            style="@style/common_lv_corners_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_below="@+id/header_image_layout"
+            android:layout_marginTop="@dimen/li_1px_size"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/usname_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用户昵称"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/li_16sp_size" />
+            <TextView
+                android:id="@+id/read_usname_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户昵称"
+                android:textColor="@color/colorBlueMore"
+                android:textSize="@dimen/li_16sp_size" />
+            <ImageView
+                android:layout_width="@dimen/li_10dp_size"
+                android:layout_height="@dimen/li_10dp_size"
+                android:layout_marginLeft="@dimen/li_8dp_size"
+                android:alpha="0.6"
+                android:src="@mipmap/arrow" />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/login_tel_layout"
+                style="@style/common_lv_corners_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/usname_layout"
+                android:layout_marginTop="@dimen/li_1px_size"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/login_tel_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="登录账号"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/li_16sp_size" />
+                <TextView
+                    android:id="@+id/read_login_tel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登录账号"
+                    android:textColor="@color/colorBlueMore"
+                    android:textSize="@dimen/li_16sp_size" />
+                <ImageView
+                    android:layout_width="@dimen/li_10dp_size"
+                    android:layout_height="@dimen/li_10dp_size"
+                    android:layout_marginLeft="@dimen/li_8dp_size"
+                    android:alpha="0.6"
+                    android:src="@mipmap/arrow" />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/email_layout"
+                style="@style/common_lv_corners_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/login_tel_layout"
+                android:layout_marginTop="@dimen/li_1px_size"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="电子邮箱"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/li_16sp_size" />
+                <TextView
+                    android:id="@+id/read_email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电子邮箱"
+                    android:textColor="@color/colorBlueMore"
+                    android:textSize="@dimen/li_16sp_size" />
+                <ImageView
+                    android:layout_width="@dimen/li_10dp_size"
+                    android:layout_height="@dimen/li_10dp_size"
+                    android:layout_marginLeft="@dimen/li_8dp_size"
+                    android:alpha="0.6"
+                    android:src="@mipmap/arrow" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/company_name_layout"
+                style="@style/common_lv_corners_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/email_layout"
+                android:layout_marginTop="@dimen/li_10dp_size"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/company_name_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="所属公司名称"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/li_16sp_size" />
+                <TextView
+                    android:id="@+id/read_company_name_text"
+                    android:layout_width="@dimen/li_200dp_size"
+                    android:layout_height="wrap_content"
+                    android:text="所属公司名称"
+                    android:lines="1"
+                    android:gravity="right"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorBlueMore"
+                    android:textSize="@dimen/li_16sp_size" />
+                <ImageView
+                    android:layout_width="@dimen/li_10dp_size"
+                    android:layout_height="@dimen/li_10dp_size"
+                    android:layout_marginLeft="@dimen/li_8dp_size"
+                    android:alpha="0.6"
+                    android:src="@mipmap/arrow" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/company_status_layout"
+                style="@style/common_lv_corners_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/company_name_layout"
+                android:layout_marginTop="@dimen/li_1px_size"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/company_status_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="资质信息"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/li_16sp_size" />
+                <TextView
+                    android:id="@+id/read_company_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="资质与经营范围"
+                    android:textColor="@color/colorBlueMore"
+                    android:textSize="@dimen/li_16sp_size" />
+                <ImageView
+                    android:layout_width="@dimen/li_10dp_size"
+                    android:layout_height="@dimen/li_10dp_size"
+                    android:layout_marginLeft="@dimen/li_8dp_size"
+                    android:alpha="0.6"
+                    android:src="@mipmap/arrow" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/head_layout"
+                style="@style/common_lv_corners_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/company_status_layout"
+                android:layout_marginTop="@dimen/li_10dp_size"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/head_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="负责人"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/li_16sp_size" />
+                <TextView
+                    android:id="@+id/read_head_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorBlueMore"
+                    android:textSize="@dimen/li_16sp_size" />
+                <ImageView
+                    android:layout_width="@dimen/li_10dp_size"
+                    android:layout_height="@dimen/li_10dp_size"
+                    android:layout_marginLeft="@dimen/li_8dp_size"
+                    android:alpha="0.6"
+                    android:src="@mipmap/arrow" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/key_performance_layout"
+                style="@style/common_lv_corners_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/head_layout"
+                android:layout_marginTop="@dimen/li_1px_size"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/key_performance_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="主要业绩"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/li_16sp_size" />
+                <TextView
+                    android:id="@+id/read_key_performance_text"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="主要业绩"
+                    android:textColor="@color/colorBlueMore"
+                    android:textSize="@dimen/li_16sp_size"
+                    android:lines="1"
+                    android:gravity="right"
+                    android:ellipsize="end"/>
+                <ImageView
+                    android:layout_width="@dimen/li_10dp_size"
+                    android:layout_height="@dimen/li_10dp_size"
+                    android:layout_marginLeft="@dimen/li_8dp_size"
+                    android:alpha="0.6"
+                    android:src="@mipmap/arrow" />
+            </LinearLayout>
+        </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

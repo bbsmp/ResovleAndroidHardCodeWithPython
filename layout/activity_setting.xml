@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+            <com.gyiscas.smartbidding.ui.widget.ToolBarView
+                android:id="@+id/toolbarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarView"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/password_change_layout"
+                    style="@style/common_lv_corners_item_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="修改密码"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <ImageView
+                        android:layout_width="@dimen/li_10dp_size"
+                        android:layout_height="@dimen/li_10dp_size"
+                        android:alpha="0.6"
+                        android:src="@mipmap/arrow" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/message_setting_layout"
+                    style="@style/common_lv_corners_item_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/password_change_layout"
+                    android:layout_marginTop="@dimen/li_1px_size"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="消息设置"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <ImageView
+                        android:layout_width="@dimen/li_10dp_size"
+                        android:layout_height="@dimen/li_10dp_size"
+                        android:alpha="0.6"
+                        android:src="@mipmap/arrow" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/version_update_layout"
+                    style="@style/common_lv_corners_item_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/message_setting_layout"
+                    android:layout_marginTop="@dimen/li_1px_size"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="版本更新"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <ImageView
+                        android:layout_width="@dimen/li_10dp_size"
+                        android:layout_height="@dimen/li_10dp_size"
+                        android:alpha="0.6"
+                        android:focusable="false"
+                        android:src="@mipmap/arrow" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/using_the_tutorial_layout"
+                    style="@style/common_lv_corners_item_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/version_update_layout"
+                    android:layout_marginTop="@dimen/li_10sp_size"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="使用教程"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <ImageView
+                        android:layout_width="@dimen/li_10dp_size"
+                        android:layout_height="@dimen/li_10dp_size"
+                        android:alpha="0.6"
+                        android:focusable="false"
+                        android:src="@mipmap/arrow" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/use_agreement_layout"
+                style="@style/common_lv_corners_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/using_the_tutorial_layout"
+                android:layout_marginTop="@dimen/li_1px_size"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="使用协议"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/li_16sp_size" />
+                <ImageView
+                    android:layout_width="@dimen/li_10dp_size"
+                    android:layout_height="@dimen/li_10dp_size"
+                    android:alpha="0.6"
+                    android:src="@mipmap/arrow" />
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/about_app_layout"
+                    style="@style/common_lv_corners_item_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/use_agreement_layout"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="关于APP"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/li_16sp_size" />
+                    <ImageView
+                        android:layout_width="@dimen/li_10dp_size"
+                        android:layout_height="@dimen/li_10dp_size"
+                        android:alpha="0.6"
+                        android:src="@mipmap/arrow" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gyiscas.smartbidding.ui.company.widget.TagGroupView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tagGroupView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/li_divider_or_bg"
+    android:paddingLeft="@dimen/li_4dp_size"
+    android:paddingRight="@dimen/li_4dp_size"
+    android:paddingTop="@dimen/li_6dp_size">
+</com.gyiscas.smartbidding.ui.company.widget.TagGroupView>

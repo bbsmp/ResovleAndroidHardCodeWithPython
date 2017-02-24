@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_title"
+        android:textSize="@dimen/li_20sp_size"
+        android:layout_marginTop="@dimen/li_14dp_size"
+        android:text="客服电话"
+        android:gravity="center_vertical"
+        />
+
+    <Button
+        android:id="@+id/business_customer_service_btn"
+        style="@style/button_borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/li_16dp_size"
+        android:layout_marginLeft="@dimen/li_16dp_size"
+        android:layout_marginRight="@dimen/li_16dp_size"
+        android:singleLine="true"
+        android:textColor="@color/grey_title"
+        android:textSize="@dimen/li_16sp_size"
+        android:hint="@string/the_business_customer_service"
+        android:padding="@dimen/li_6dp_size"
+        android:background="@drawable/selector_grey_corners_button"
+        />
+    <Button
+        style="@style/button_borderless"
+        android:id="@+id/technical_support_customer_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/li_16dp_size"
+        android:layout_marginLeft="@dimen/li_16dp_size"
+        android:layout_marginRight="@dimen/li_16dp_size"
+        android:singleLine="true"
+        android:textColor="@color/grey_title"
+        android:textSize="@dimen/li_16sp_size"
+        android:hint="@string/Technical_support"
+        android:padding="@dimen/li_6dp_size"
+        android:background="@drawable/selector_grey_corners_button"
+        />
+</LinearLayout>

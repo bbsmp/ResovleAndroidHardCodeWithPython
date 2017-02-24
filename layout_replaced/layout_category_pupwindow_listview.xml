@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView -->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:card="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/notes_item_root"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="0dp"-->
+    <!--android:foreground="?attr/selectableItemBackground"-->
+    <!--android:background="@drawable/shape_pupwindow"-->
+    <!--android:paddingTop="0dp"-->
+    <!--card:cardBackgroundColor="@android:color/white"-->
+    <!--card:cardCornerRadius="0dp"-->
+    <!--card:cardElevation="2dp"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--&gt;-->
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/li_1px_size"
+        android:layout_marginRight="@dimen/li_1px_size"
+        android:divider="@color/white_pressed"
+        android:dividerHeight="@dimen/li_1px_size"
+        android:scrollbars="none">
+    </ListView>
+<!--</android.support.v7.widget.CardView>-->

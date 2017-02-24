@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.gyiscas.smartbidding.ui.search.searchView.model.CompanyModel" />
+        <variable
+            name="presenter"
+            type="com.gyiscas.smartbidding.ui.search.searchView.presenters.CompanyTypePresenter"/>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:background="@color/li_white"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/li_16dp_size"
+            android:gravity="center_horizontal"
+            android:text="公司信息高级检索"
+            android:textSize="@dimen/li_16sp_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/li_42dp_size"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/li_16dp_size"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_search_pup_item"
+                android:gravity="center"
+                android:onClick="@{() -> model.clear()}"
+                android:text="重置"
+                android:textSize="@dimen/li_18sp_size" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_search_pup_button_red"
+                android:gravity="center"
+                android:text="检索"
+                android:textColor="@color/li_white"
+                android:textSize="@dimen/li_18sp_size" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/buttons"
+            android:layout_below="@id/title"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/li_16dp_size"
+                android:paddingRight="@dimen/li_16dp_size">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_16dp_size"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="企业名称"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/li_2dp_size"
+                        android:background="@drawable/selector_search_pup_item"
+                        android:padding="@dimen/li_8dp_size"
+                        android:textSize="@dimen/li_16sp_size"
+                        app:binding="@{model.comName}" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="公司资质"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/li_2dp_size"
+                        android:background="@drawable/selector_search_pup_item"
+                        android:padding="@dimen/li_8dp_size"
+                        android:textSize="@dimen/li_16sp_size"
+                        app:binding="@{model.cqName}" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="企业类别"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/li_32dp_size"
+                        android:background="@drawable/selector_search_pup_item"
+                        android:textColor="@color/li_content_black"
+                        android:textColorHint="@color/colorGreyBtn"
+                        android:textSize="@dimen/li_16sp_size"
+                        app:binding="@{model.com_typeString}"
+                        android:onClick="@{(view) -> presenter.pickCompanyType(view, model)}"
+                        android:hint="企业类别" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="法人姓名"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/li_2dp_size"
+                        android:background="@drawable/selector_search_pup_item"
+                        android:padding="@dimen/li_8dp_size"
+                        android:textSize="@dimen/li_16sp_size"
+                        app:binding="@{model.com_repnese}" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="人员姓名"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/li_2dp_size"
+                        android:background="@drawable/selector_search_pup_item"
+                        android:padding="@dimen/li_8dp_size"
+                        android:textSize="@dimen/li_16sp_size"
+                        app:binding="@{model.perName}" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="所参与项目"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/li_2dp_size"
+                        android:background="@drawable/selector_search_pup_item"
+                        android:padding="@dimen/li_8dp_size"
+                        android:textSize="@dimen/li_16sp_size"
+                        app:binding="@{model.proName}" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="诚信信息"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/li_2dp_size"
+                        android:background="@drawable/selector_search_pup_item"
+                        android:padding="@dimen/li_8dp_size"
+                        android:textSize="@dimen/li_16sp_size"
+                        app:binding="@{model.honesty}" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/li_10dp_size"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="不良信息"
+                        android:textSize="@dimen/li_16sp_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/li_2dp_size"
+                        android:background="@drawable/selector_search_pup_item"
+                        android:padding="@dimen/li_8dp_size"
+                        android:textSize="@dimen/li_16sp_size"
+                        app:binding="@{model.notHonesty}" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>
