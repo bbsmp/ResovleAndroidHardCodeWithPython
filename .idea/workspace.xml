@@ -1,7 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255a7412-163a-4613-a823-2fc92bc95d77" name="Default" comment="" />
+    <list default="true" id="255a7412-163a-4613-a823-2fc92bc95d77" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_about_me.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_account_connect.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_aread_bids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_calculator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_change_tel.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_choose.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_company_detial.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_data_center.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_detial_content.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_find_password.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_get_credit_report.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_index_bids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_index_winbids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_insurance_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_insurance_list.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_integrity_detial.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_login.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_look_picture.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_member_package.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_my_member.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_news.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_order_list.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_possible_win_bid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_project_detial.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_public_search.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_qualify_scope_keywords.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_reset_password.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_section_tel_listview.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_select_qualify.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_select_scob.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_setting.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_setting_show_web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_show_with_activity.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_show_with_web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_show_with_web_view_fuck.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_sign_up.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_unit_listview.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/activity_welcome.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_bid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_clc_bid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_clc_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_home.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_keywords.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_my.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_personal_center.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_public_search.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_qualify.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_scob.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/fragment_win_bid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/item_tab.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_account_connect_item_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_account_connect_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_calculator_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_category.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_category_pupwindow_listview.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_category_pupwindow_listview_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_center_listview_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_company_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_company_item_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_company_item_list_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_complex_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_complex_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_complex_single_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_contact_pupwindow.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_content_footer.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_content_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_customer_service.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_data_counts.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_date_picker.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_dialog_search_selection.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_gridview_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_home_toolbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_info_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_last_bid_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_load_data_tip_and_pregressbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_longclick_dialog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_member_right_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_member_status.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_no_data_loaded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_notification_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_order_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_order_recorder_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_pay_dialog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_pay_more_pupwindow.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_progress_bar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_pup_company_info_tag.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_push_setting.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_quali_info_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_retrieve.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_search_bids_wids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_search_choose_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_search_company.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_search_integrity.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_search_legislation.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_search_project.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_search_view_topbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_search_view_topbar_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_sectioninfo_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_select_listview_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_show_company_content_item_list.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_today_update_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_toolbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_toolbar_with_searchbox.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_tools_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_unit_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_unitinfo_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_update_item_dialog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_user_choice.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_useradvice.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_vertical_marquee_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/layout_vip_price.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/show_company_content_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/show_content_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/showdetail_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_about_me.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_account_connect.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_aread_bids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_calculator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_change_tel.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_choose.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_company_detial.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_data_center.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_detial_content.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_find_password.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_get_credit_report.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_index_bids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_index_winbids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_insurance_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_insurance_list.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_integrity_detial.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_login.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_look_picture.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_member_package.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_my_member.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_news.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_order_list.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_possible_win_bid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_project_detial.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_public_search.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_qualify_scope_keywords.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_reset_password.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_section_tel_listview.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_select_qualify.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_select_scob.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_setting.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_setting_show_web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_show_with_activity.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_show_with_web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_show_with_web_view_fuck.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_sign_up.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_unit_listview.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/activity_welcome.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_bid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_clc_bid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_clc_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_home.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_keywords.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_my.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_personal_center.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_public_search.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_qualify.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_scob.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/fragment_win_bid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/item_tab.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_account_connect_item_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_account_connect_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_calculator_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_category.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_category_pupwindow_listview.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_category_pupwindow_listview_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_center_listview_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_company_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_company_item_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_company_item_list_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_complex_detail.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_complex_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_complex_single_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_contact_pupwindow.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_content_footer.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_content_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_customer_service.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_data_counts.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_date_picker.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_dialog_search_selection.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_gridview_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_home_toolbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_info_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_last_bid_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_load_data_tip_and_pregressbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_longclick_dialog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_member_right_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_member_status.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_no_data_loaded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_notification_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_order_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_order_recorder_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_pay_dialog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_pay_more_pupwindow.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_progress_bar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_pup_company_info_tag.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_push_setting.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_quali_info_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_retrieve.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_search_bids_wids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_search_choose_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_search_company.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_search_integrity.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_search_legislation.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_search_project.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_search_view_topbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_search_view_topbar_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_sectioninfo_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_select_listview_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_show_company_content_item_list.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_today_update_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_toolbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_toolbar_with_searchbox.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_tools_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_unit_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_unitinfo_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_update_item_dialog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_user_choice.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_useradvice.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_vertical_marquee_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/layout_vip_price.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/show_company_content_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/show_content_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout_replaced/showdetail_item_layout.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resolve_hard_code.py" afterPath="$PROJECT_DIR$/resolve_hard_code.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,8 +244,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/resolve_android_hardcode$command_text.coverage" NAME="command_text Coverage Results" MODIFIED="1487897961219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/resolve_android_hardcode$resolve_hard_code.coverage" NAME="resolve_hard_code Coverage Results" MODIFIED="1487896458478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/resolve_android_hardcode$command_text.coverage" NAME="command_text Coverage Results" MODIFIED="1487899832341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/resolve_android_hardcode$resolve_hard_code.coverage" NAME="resolve_hard_code Coverage Results" MODIFIED="1487899840936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -19,8 +253,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="showdetail_item_layout.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/showdetail_item_layout.xml">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="112">
+                <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".python-version" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.python-version">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -29,28 +276,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_about_me.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/activity_about_me.xml">
+      <file leaf-file-name="resolve_hard_code.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resolve_hard_code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4034">
-              <caret line="303" column="45" lean-forward="true" selection-start-line="303" selection-start-column="45" selection-end-line="309" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="235">
+              <caret line="160" column="14" lean-forward="false" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="14" />
+              <folding>
+                <element signature="e#19#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_home.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/fragment_home.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1038">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showdetail_item_layout.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout_replaced/showdetail_item_layout.xml">
+      <file leaf-file-name="posix.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/776880377/posix.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -59,61 +298,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout_vip_price.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout_replaced/layout_vip_price.xml">
+      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/776880377/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-462">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout_update_item_dialog.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout_replaced/layout_update_item_dialog.xml">
+      <file leaf-file-name="cElementTree.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/xml/etree/cElementTree.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout_toolbar_with_searchbox.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/layout_replaced/layout_toolbar_with_searchbox.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-366">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_detial_content.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/activity_detial_content.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_index_bids.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/activity_index_bids.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_insurance_list.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/activity_insurance_list.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,6 +355,9 @@
       <dir>$PROJECT_DIR$/layout</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -164,9 +366,10 @@
         <option value="$PROJECT_DIR$/layout_copy/activity_index_winbids.xml" />
         <option value="$PROJECT_DIR$/strings.xml" />
         <option value="$PROJECT_DIR$/layout_copy/activity_change_tel.xml" />
-        <option value="$PROJECT_DIR$/resolve_hard_code.py" />
         <option value="$PROJECT_DIR$/command_text.py" />
         <option value="$PROJECT_DIR$/layout/activity_about_me.xml" />
+        <option value="$PROJECT_DIR$/resolve_hard_code.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -181,6 +384,7 @@
     <option name="width" value="1280" />
     <option name="height" value="722" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -196,8 +400,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,6 +414,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,7 +439,7 @@
       <recent name="$PROJECT_DIR$/layout" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.command_text">
+  <component name="RunManager" selected="Python.resolve_hard_code">
     <configuration default="false" name="resolve_hard_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -492,8 +696,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.command_text" />
-        <item index="1" class="java.lang.String" itemvalue="Python.resolve_hard_code" />
+        <item index="0" class="java.lang.String" itemvalue="Python.resolve_hard_code" />
+        <item index="1" class="java.lang.String" itemvalue="Python.command_text" />
       </list>
     </recent_temporary>
   </component>
@@ -512,17 +716,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14216478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14378029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32857144" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32857144" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.49030694" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -565,7 +769,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/resolve_hard_code.py</url>
-          <line>139</line>
+          <line>141</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
@@ -581,42 +785,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/layout_copy/layout_retrieve.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="82" column="38" lean-forward="false" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/layout_search_bids_wids.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="262" column="50" lean-forward="false" selection-start-line="262" selection-start-column="50" selection-end-line="262" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/layout_search_integrity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="263" column="30" lean-forward="false" selection-start-line="263" selection-start-column="30" selection-end-line="263" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout/layout_search_bids_wids.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="461" column="42" lean-forward="false" selection-start-line="461" selection-start-column="42" selection-end-line="461" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout/activity_find_password.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layout/activity_index_winbids.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -695,27 +863,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_company_detial.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/layout_dialog_search_selection.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_data_center.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_company_detial.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/layout_dialog_search_selection.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_data_center.xml" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4960">
@@ -723,107 +873,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7557">
-          <caret line="213" column="8" lean-forward="false" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_index_winbids.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_get_credit_report.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/layout_vip_price.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_show_with_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-832">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_select_qualify.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/layout_content_footer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_about_me.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/layout_unitinfo_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/showdetail_item_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_change_tel.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout_copy/activity_detial_content.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/strings1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="43" column="54" lean-forward="false" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_login.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_index_winbids.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_get_credit_report.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/layout_vip_price.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_show_with_activity.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_select_qualify.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/layout_content_footer.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_about_me.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/layout_unitinfo_item.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/showdetail_item_layout.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_change_tel.xml" />
+    <entry file="file://$PROJECT_DIR$/layout_copy/activity_detial_content.xml" />
+    <entry file="file://$PROJECT_DIR$/strings1.xml" />
     <entry file="file://$PROJECT_DIR$/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1072">
@@ -832,29 +894,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resolve_hard_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="165" column="45" lean-forward="true" selection-start-line="165" selection-start-column="45" selection-end-line="165" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/command_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/command_text.py" />
     <entry file="file://$PROJECT_DIR$/layout/activity_get_credit_report.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-224">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-574">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,7 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,15 +941,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layout/activity_about_me.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4034">
-          <caret line="303" column="45" lean-forward="true" selection-start-line="303" selection-start-column="45" selection-end-line="309" selection-end-column="50" />
+        <state relative-caret-position="4848">
+          <caret line="303" column="45" lean-forward="false" selection-start-line="303" selection-start-column="45" selection-end-line="309" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/layout/fragment_home.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1038">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -932,7 +973,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layout_replaced/layout_vip_price.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -956,9 +997,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layout_replaced/layout_toolbar_with_searchbox.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-366">
+        <state relative-caret-position="-1038">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/xml/etree/cElementTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/776880377/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/776880377/posix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.python-version">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resolve_hard_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="160" column="14" lean-forward="false" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="14" />
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="112">
+            <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

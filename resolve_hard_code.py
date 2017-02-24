@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 import os
 import re
 from pypinyin import lazy_pinyin
@@ -136,7 +138,7 @@ def replace_hard_code(src_file, des_dir, dicts):
             new_lines.append(line)
     if not os.path.lexists(des_dir):
         os.makedirs(des_dir)
-    des_file = file.replace("layout/", des_dir)
+    des_file = file.replace(layout_dir, des_dir)
     with open(des_file, "w") as d_f:
         d_f.writelines(new_lines)
 
@@ -156,6 +158,9 @@ def get_string_and_name_from_stringXML(file):
 
 if __name__ == '__main__':
 
+    layout_dir = "layout/"
+    layout_out_dir = "layout_replaced/"
+
     #属性
     attrs = (
         "{http://schemas.android.com/apk/res/android}text",
@@ -167,6 +172,9 @@ if __name__ == '__main__':
 
     #2、根文件获取ElementTree的根节点
     layout_roots = []
+    if layout_files is None or len(layout_files) == 0:
+        print("没有找到布局文件！")
+        os._exit(0)
     for file in layout_files:
         try:
             root = get_file_element_tree(file)
