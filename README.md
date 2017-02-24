@@ -1,0 +1,2 @@
+# ResovleAndroidHardCodeWithPython
+用python解决Android布局中字符串硬编码问题
