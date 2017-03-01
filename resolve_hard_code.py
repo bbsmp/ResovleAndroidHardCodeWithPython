@@ -68,7 +68,13 @@ def find_hard_code_attribute_value(tree_root, attrs):
             hard_code = child.get(attr) # 获取属性值
             if hard_code is not None and len(hard_code) and str(hard_code).find("@string/") == -1:
                 # 如果属性值不会空且不是软编码（）则就是我们要找的硬编码字符串
-                res.add(hard_code)
+                if(str(hard_code).find("@") == -1):
+                    res.add(hard_code)
+                else:
+                    hds = re.findall(r'"(.*?)"', hard_code)
+                    for hd in hds:
+                        if len(hd) > 0:
+                            res.add(hd)
     return res
 
 def generate_name_of_hard_code_string(hard_codes):
@@ -133,7 +139,7 @@ def replace_hard_code(src_file, des_dir, dicts):
     new_lines = []
     for line in lines:
         for (k, v) in dicts.items():
-            line = line.replace('="' + k +'"',  '="' + "@string/" + v + '"')
+            line = line.replace('"' + k +'"',  '"' + "@string/" + v + '"')
         if len(line.strip()) > 0:
             new_lines.append(line)
     if not os.path.lexists(des_dir):
